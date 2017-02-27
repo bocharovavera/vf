@@ -1,0 +1,7 @@
+x = float(input()) H = 30 M = 30/60 S = (30/60)/60 a = int(x//H) b = 
+int((x%H)//M) c = int((x%H)%M//S) print(a, b, c)
+
+
+
+P = float(input()) X = float(input()) Y = float(input()) a = X*100+Y s = 
+a+(a*(P/100)) r = int(s//100) k = int(s%100) print(r, k)
