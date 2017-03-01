@@ -1,0 +1,35 @@
+a=int(input()) 
+b=int(input()) 
+c=1 
+d=1 
+while b!=0:
+    if a==b:
+        c+=1
+        b=int(input())
+    else:
+        if c>d:
+            d=c
+        a=b
+        b=int(input())
+        c=1 
+if c>d:
+    print(c) 
+else:
+    print(d)
+
+
+
+from math import * 
+x=4 
+n=-1 
+s=0 
+sum=0 
+x1=0 
+while x!=0:
+    x=int(input())
+    sum=sum+x
+    n+=1
+    x1=x1+x*x 
+s=sum/n 
+q=sqrt((x1+s*s*n-2*sum*s)/(n-1)) 
+print(q)
