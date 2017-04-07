@@ -1,0 +1,19 @@
+str = input().split() n = int(str[0]) a = 'I'*n k = int(str[1]) for i in 
+range(k):
+    str = input().split()
+    l = int(str[0])
+    r = int(str[1])
+    a = a[:(l - 1)] + a[l - 1:r].replace('I', '.') + a[r:] print(a)
+
+
+
+
+
+x,y = [],[] for i in range(8):
+    s,t = [int(s) for s in input().split()]
+    x.append(s) or y.append(t) correct = True for i in range(8):
+    for j in range(i + 1, 8):
+        if x[i] == x[j] or y[i] == y[j] or abs(x[i] - x[j]) == abs(y[i] 
+- y[j]):
+            correct = False print('NO' if correct else 
+'YES',sep='',end='')
